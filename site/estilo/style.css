@@ -1,0 +1,94 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Serif:ital,wght@0,400;1,200&display=swap');
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    background-image: linear-gradient(rgba(160, 111, 224, 0.76),rgba(40, 0, 150, 0.712));
+    
+}
+
+img{
+    box-shadow: 4px 1.5px 50px 1px rgba(23, 10, 41, 0.507);border-radius: 25px 70px 25px 70px;
+}
+nav#sociais{
+    height: 30vh;
+    width: 70vw;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    
+    
+  
+}
+ nav a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans-serif;
+    color: #a0a0a0;
+    position:relative;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+ 
+
+}
+
+header{
+    color: #d2d0ecce;   
+    letter-spacing: 4.0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+    text-align: center;
+    margin-top: 10vh;
+
+}
+ main{
+   position: relative;
+   text-align: center;
+   padding-top: 50px;
+}
+header p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans-serif;
+    font-size:small;
+}
+
+ div ul{
+  
+    text-align: center;
+    list-style: none;
+    width: 10vw;
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content:space-around;
+
+    
+  
+}
+nav a::after{
+content:" ";
+background-color: #07f055;
+width: 0%;
+height: 2px;
+position: absolute;
+bottom:-10px;
+left: 0;
+transition: 0.5s ease-in-out;
+}
+
+nav a:hover{
+    color: #ffffff;
+}
+nav a:hover::after{
+    width: 100%;
+}
